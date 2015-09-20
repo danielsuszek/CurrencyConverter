@@ -1,4 +1,15 @@
 {% extends '::base.html.twig' %}
 {% block body %}
-    index.html.twig
+    <div id="main_container">
+        <h1>Converter</h1>
+        <form action="{{ path('currency_converter_currency_homepage') }}" method="post" >
+        {{ form_errors(form) }}    
+        <div class="row">
+        {{ form_row(form.currencyInput) }}
+        </div>
+        <div class="row">
+        <input type="submit" value="Convert to PLN">
+        </div>
+        </form>
+    </div>
 {% endblock %}
