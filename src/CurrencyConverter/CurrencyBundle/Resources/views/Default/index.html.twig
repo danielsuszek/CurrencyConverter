@@ -2,14 +2,19 @@
 {% block body %}
     <div id="main_container">
         <h1>Converter</h1>
-        <form action="{{ path('currency_converter_currency_homepage') }}" method="post" >
-        {{ form_errors(form) }}    
-        <div class="row">
-        {{ form_row(form.currencyInput) }}
+        <div id="form">
+            {{ form_start(form) }}
+        <div id="errors">
+             {{ form_errors(form.currencyInput) }}
         </div>
-        <div class="row">
-        <input type="submit" value="Convert to PLN">
+        <div id="currencyInput">       
+            {{ form_label(form.currencyInput, 'RUB ') }}
+            {{ form_widget(form.currencyInput) }}           
+            {{ form_end(form) }}         
         </div>
-        </form>
+        <div id="convertedCurrency">
+           {{ currencyInput }} RUB = {{ convertedCurrency }} PLN
+        </div>
     </div>
+            
 {% endblock %}

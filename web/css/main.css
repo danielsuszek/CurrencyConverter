@@ -30,7 +30,7 @@ body {
         
 }
 
-input {     
+input, button {     
     position: absolute;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
@@ -43,10 +43,41 @@ input {
 
     right: 80px;
 }
-input[type=submit] {
-    margin-top: 20px;
+button {
+    margin-top: 40px;
     border-radius: 10px 10px 10px 10px;
+    font-size: 20px;
 }
+
 input, label {
     font-size: 20px;
+}
+label {
+    float: left;
+    
+}
+#errors {
+    position: absolute;
+    top: 75px;
+}
+#convertedCurrency {
+    position:absolute;
+    top: 200px;
+    width: 80%;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ff920a;
+    border-radius: 5px 5px 5px 5px;
+    
+    background: rgba(255,241,224,1);
+    background: -moz-linear-gradient(top, rgba(255,241,224,1) 0%, rgba(255,198,128,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,241,224,1)), color-stop(100%, rgba(255,198,128,1)));
+    background: -webkit-linear-gradient(top, rgba(255,241,224,1) 0%, rgba(255,198,128,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,241,224,1) 0%, rgba(255,198,128,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,241,224,1) 0%, rgba(255,198,128,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,241,224,1) 0%, rgba(255,198,128,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff1e0', endColorstr='#ffc680', GradientType=0 );
+
 }

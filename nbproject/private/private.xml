@@ -7,6 +7,7 @@
             <file>file:/home/daniel/Projects/SymfonyProjects/CurrencyConverter/web/css/main.css</file>
             <file>file:/home/daniel/Projects/SymfonyProjects/CurrencyConverter/src/CurrencyConverter/CurrencyBundle/Entity/Currency.php</file>
             <file>file:/home/daniel/Projects/SymfonyProjects/CurrencyConverter/src/CurrencyConverter/CurrencyBundle/Controller/DefaultController.php</file>
+            <file>file:/home/daniel/Projects/SymfonyProjects/CurrencyConverter/src/CurrencyConverter/CurrencyBundle/Resources/config/routing.yml</file>
         </group>
     </open-files>
 </project-private>
