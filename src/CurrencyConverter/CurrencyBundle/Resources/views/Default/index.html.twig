@@ -1,4 +1,20 @@
 {% extends '::base.html.twig' %}
 {% block body %}
-    index.html.twig
+    <div id="main_container">
+        <h1>Converter</h1>
+        <div id="form">
+            {{ form_start(form) }}
+        <div id="errors">
+             {{ form_errors(form.currencyInput) }}
+        </div>
+        <div id="currencyInput">       
+            {{ form_label(form.currencyInput, 'RUB ') }}
+            {{ form_widget(form.currencyInput) }}           
+            {{ form_end(form) }}         
+        </div>
+        <div id="convertedCurrency">
+           {{ currencyInput }} RUB = {{ convertedCurrency }} PLN
+        </div>
+    </div>
+            
 {% endblock %}
