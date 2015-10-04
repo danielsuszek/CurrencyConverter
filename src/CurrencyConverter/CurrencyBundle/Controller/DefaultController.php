@@ -22,7 +22,7 @@ class DefaultController extends Controller
         $form->handleRequest($request);  
         
         if ($form->isValid()) {
-            // perform some action, such as saving the task to the database
+            
             $currencyInput = $form["currencyInput"]->getData();
             
             $convertedCurrency = $currency->convertCurrencyAction('RUB', 'PLN', $currencyInput);

@@ -12,15 +12,6 @@ class Currency
     protected $currencyTo = 'PLN';
     
     
-    /**
-     * @Assert\NotBlank()
-     * @Assert\Range(
-     *      min = 0,
-     *      max = 100000000,
-     *      minMessage = "You must be at least {{ limit }} RUB to enter",
-     *      maxMessage = "You cannot be more than {{ limit }} RUB to enter"
-     * )
-     */
     protected $currencyInput;
     
     public function getCurrencyFrom()
