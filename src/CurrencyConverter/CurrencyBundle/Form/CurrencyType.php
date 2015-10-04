@@ -10,7 +10,7 @@ class CurrencyType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('currencyInput', 'text', array('label' => 'RUB'))
+        $builder->add('currencyInput', 'integer', array('label' => 'RUB'))
             ->add('save', 'submit', array('label' => 'Convert to PLN'))
             ->getForm();     
         

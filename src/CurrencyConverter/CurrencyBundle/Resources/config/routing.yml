@@ -1,6 +1,4 @@
 currency_converter_currency_homepage:
     path:     /
     defaults: { _controller: CurrencyConverterCurrencyBundle:Default:index }
-testForm:
-    path:     /testForm
-    defaults: { _controller: CurrencyConverterCurrencyBundle:Default:testForm }    
+

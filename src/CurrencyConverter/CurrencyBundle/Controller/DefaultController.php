@@ -37,22 +37,6 @@ class DefaultController extends Controller
         ));
     }
     
-    public function testFormAction(Request $request)
-    {
-        $currency = new Currency();
-        $form =  $this->createFormBuilder($currency)
-                ->add('currencyInput', 'integer', array('label' => 'RUB'))
-                ->add('save', 'submit', array('label' => 'Convert to PLN'))
-                ->getForm();    
-        
-        $form->handleRequest($request);  
-        
-        if ($form->isValid()) {                    
-            exit('Form is valid');
-        }
-        return $this->render('CurrencyConverterCurrencyBundle:Default:testForm.html.twig', array(
-            'form' => $form->createView()
-        ));
-    }
+    
     
 }
